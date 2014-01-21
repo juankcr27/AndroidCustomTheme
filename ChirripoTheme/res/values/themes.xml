@@ -5,25 +5,33 @@
            parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/SpiritBreakersActionBar</item>
         <item name="android:actionBarTabTextStyle">@style/SpiritBreakersActionBarTabText</item>
-        <item name="android:actionMenuTextColor">#669933</item>
+        <item name="android:buttonStyle">@style/SpiritBreakersButtonStyle</item>
     </style>
 
     <!-- ActionBar styles -->
     <style name="SpiritBreakersActionBar"
            parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:titleTextStyle">@style/SpiritBreakersActionBarTitleText</item>
-        <item name="android:background">#669933</item>
+        <item name="android:background">@color/actionbar_color</item>
     </style>
     
       <!-- ActionBar title text -->
     <style name="SpiritBreakersActionBarTitleText"
            parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">#333300</item>
+        <item name="android:textColor">@color/text_color</item>
     </style>
     
     <!-- ActionBar tabs text styles -->
     <style name="SpiritBreakersActionBarTabText"
            parent="@android:style/Widget.Holo.ActionBar.TabText">
-        <item name="android:textColor">#333300</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    
+    <style name="SpiritBreakersButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:background">@color/custom_button_bg</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
     </style>
 </resources>
