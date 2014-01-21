@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="SpiritBreakersActionBarTheme"
+           parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/SpiritBreakersActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/SpiritBreakersActionBarTabText</item>
+        <item name="android:actionMenuTextColor">#669933</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="SpiritBreakersActionBar"
+           parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/SpiritBreakersActionBarTitleText</item>
+        <item name="android:background">#669933</item>
+    </style>
+    
+      <!-- ActionBar title text -->
+    <style name="SpiritBreakersActionBarTitleText"
+           parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#333300</item>
+    </style>
+    
+    <!-- ActionBar tabs text styles -->
+    <style name="SpiritBreakersActionBarTabText"
+           parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">#333300</item>
+    </style>
+</resources>
