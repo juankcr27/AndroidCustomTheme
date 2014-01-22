@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- the theme applied to the application or activity -->
     <style name="SpiritBreakersActionBarTheme"
            parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/SpiritBreakersActionBar</item>
         <item name="android:actionBarTabTextStyle">@style/SpiritBreakersActionBarTabText</item>
         <item name="android:buttonStyle">@style/SpiritBreakersButtonStyle</item>
+        <item name="android:textViewStyle">@style/SpiritBreakersTextStyle</item>
     </style>
 
     <!-- ActionBar styles -->
@@ -27,11 +28,18 @@
         <item name="android:textColor">@color/text_color</item>
     </style>
     
-    <style name="SpiritBreakersButtonStyle" parent="android:style/Widget.Button">
+    <style name="SpiritBreakersButtonStyle" parent="@android:style/Widget.Button">
         <item name="android:background">@color/custom_button_bg</item>
         <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
         <item name="android:textColor">@color/button_text</item>
         <item name="android:minHeight">48dip</item>
         <item name="android:minWidth">64dip</item>
     </style>
+    
+    <style name="SpiritBreakersTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">60sp</item> 
+        <item name="android:textColor">@color/actionbar_color</item>       
+        <item name="android:textStyle">italic</item>
+    </style>
+    
 </resources>
